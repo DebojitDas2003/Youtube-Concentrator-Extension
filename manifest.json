@@ -1,0 +1,21 @@
+{
+    "manifest_version": 3,
+    "name": "Youtube Concentrator",
+    "version": "1.0",
+    "description": "Helps to concentrate while studying in youtube by skipping ads, ddisabling switching to new video",
+    "author": "Debojit",
+    "icons": {
+      "256": "icon.png"
+    },
+    "permissions": [
+      "activeTab"
+    ],
+    "content_scripts": [
+      {
+        "matches": ["https://*.youtube.com/*"],
+        "js": ["content.js"],
+        "run_at": "document_idle"
+      }
+    ]
+  }
+  
